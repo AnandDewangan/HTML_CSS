@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simplotel Assignments</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="nav" onclick="handlerNav()">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <div class="headerContainer">
+        <div class="logo"></div>
+        <div class="flex nav-links" id="nav-toggle">
+          <a href="#">Home</a>
+          <a href="#">Order</a>
+          <a href="#">Food</a>
+          <a href="#">Restaurant</a>
+          <a href="#">Testimonials</a>
+          <a href="#">Contact Us</a>
+        </div>
+        <div class="icons">
+          <img src="phone.png" alt="" />
+          <img src="shopping-cart.png" alt="" />
+        </div>
+      </div>
+    </header>
+    <section class="main">
+      <div class="content">
+        <h1>LOREM IPSUM</h1>
+        <p>
+          Lorem Ipsum has been the industry's standard dummy text ever since the
+          1500s, when an unknown printer took a galley of type and scrambled it
+          to make a type specimen book.
+        </p>
+      </div>
+    </section>
+    <section class="orderSection" id="orderSection">
+      <div class="orderNow">
+        <h1 class="orderHeading">Order Now</h1>
+        <div class="foodSection flex">
+          <div class="food flex">
+            <div class="img img4"></div>
+            <h3>BURGER</h3>
+            <p>Lorem Ipsum has been the industry's standard dummy text</p>
+          </div>
+          <div class="food flex">
+            <div class="img img2"></div>
+            <h3>PIZZA</h3>
+            <p>Lorem Ipsum has been the industry's standard dummy text</p>
+          </div>
+          <div class="food flex">
+            <div class="img img3"></div>
+            <h3>PASTA</h3>
+            <p>Lorem Ipsum has been the industry's standard dummy text</p>
+          </div>
+        </div>
+        <div class="buttonSection flex">
+          <button>Order</button>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const headerContainer = document.querySelector(".headerContainer");
+
+      function handlerNav(){
+        headerContainer.classList.toggle("index5");
+      }
+    </script>
+  </body>
+</html>
